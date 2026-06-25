@@ -49,13 +49,6 @@ See 'snap info docker' for additional versions.
 !!! В процессе последующего выполнения ДЗ НЕ изменяйте содержимое файлов в fork-репозитории! Ваша задача ДОБАВИТЬ 5 файлов: ```Dockerfile.python```, ```compose.yaml```, ```.gitignore```, ```.dockerignore```,```bash-скрипт```. Если вам понадобилось внести иные изменения в проект - вы что-то делаете неверно!
 ---
 
-## Задача 2 (*)
-1. Создайте в yandex cloud container registry с именем "test" с помощью "yc tool" . [Инструкция](https://cloud.yandex.ru/ru/docs/container-registry/quickstart/?from=int-console-help)
-2. Настройте аутентификацию вашего локального docker в yandex container registry.
-3. Соберите и залейте в него образ с python приложением из задания №1.
-4. Просканируйте образ на уязвимости.
-5. В качестве ответа приложите отчет сканирования.
-
 ## Задача 3
 1. Изучите файл "proxy.yaml"
 2. Создайте в репозитории с проектом файл ```compose.yaml```. С помощью директивы "include" подключите к нему файл "proxy.yaml".
