@@ -33,12 +33,14 @@ See 'snap info docker' for additional versions.
 ## Задача 1
 1. Сделайте в своем GitHub пространстве [fork](https://github.com/Briefklammern/shvirtd-example-python) [репозитория](https://github.com/netology-code/shvirtd-example-python).
 
-2. Создайте файл ```Dockerfile.python``` на основе существующего `Dockerfile`:
+2. Создайте файл [Dockerfile.python](https://github.com/Briefklammern/shvirtd-example-python/blob/main/Dockerfile.python) на основе существующего `Dockerfile`:
    - Используйте базовый образ ```python:3.12-slim```
    - Обязательно используйте конструкцию ```COPY . .``` в Dockerfile
    - Создайте [.dockerignore](https://github.com/Briefklammern/shvirtd-example-python/blob/main/.dockerignore) файл для исключения ненужных файлов
    - Используйте ```CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]``` для запуска
    - Протестируйте корректность сборки
+
+![build](./img/2.PNG)
 
 2.1 Используйте multistage сборку вместо single stage.
 
