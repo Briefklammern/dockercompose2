@@ -31,7 +31,7 @@ See 'snap info docker' for additional versions.
 ---
 
 ## Задача 1
-1. Сделайте в своем GitHub пространстве fork [репозитория](https://github.com/netology-code/shvirtd-example-python).
+1. Сделайте в своем GitHub пространстве [fork](https://github.com/Briefklammern/shvirtd-example-python) [репозитория](https://github.com/netology-code/shvirtd-example-python).
 
 2. Создайте файл ```Dockerfile.python``` на основе существующего `Dockerfile`:
    - Используйте базовый образ ```python:3.12-slim```
