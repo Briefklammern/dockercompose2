@@ -36,9 +36,10 @@ See 'snap info docker' for additional versions.
 2. Создайте файл ```Dockerfile.python``` на основе существующего `Dockerfile`:
    - Используйте базовый образ ```python:3.12-slim```
    - Обязательно используйте конструкцию ```COPY . .``` в Dockerfile
-   - Создайте `.dockerignore` файл для исключения ненужных файлов
+   - Создайте [.dockerignore](https://github.com/Briefklammern/shvirtd-example-python/blob/main/.dockerignore) файл для исключения ненужных файлов
    - Используйте ```CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]``` для запуска
    - Протестируйте корректность сборки
+
 2.1 Используйте multistage сборку вместо single stage.
 3. (Необязательная часть, *) Изучите инструкцию в проекте и запустите web-приложение без использования docker, с помощью venv. (Mysql БД можно запустить в docker run).
 4. (Необязательная часть, *) Изучите код приложения и добавьте управление названием таблицы через ENV переменную.
