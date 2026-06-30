@@ -65,7 +65,7 @@ See 'snap info docker' for additional versions.
 3. Напишите [bash-скрипт](./deploy.sh), который скачает ваш fork-репозиторий в каталог /opt и запустит проект целиком.
 ![bash](./img/6.PNG)
 4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:8090```. Таким образом трафик будет направлен в ingress-proxy. Трафик должен пройти через цепочки: Пользователь → Internet → Nginx → HAProxy → FastAPI(запись в БД) → HAProxy → Nginx → Internet → Пользователь
-6. Повторите SQL-запрос на сервере и приложите скриншот и ссылку на fork.
+6. Повторите SQL-запрос на сервере и приложите скриншот и ссылку на [fork](https://github.com/Briefklammern/shvirtd-example-python).
 
 ![check](./img/7.PNG)
 
